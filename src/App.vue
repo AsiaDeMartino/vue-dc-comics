@@ -3,6 +3,7 @@
    <MyHeader />
    <MyMain />
    <NavBar />
+   <FooterMenu />
     
   </div>
 </template>
@@ -11,6 +12,7 @@
   import MyHeader from './components/MyHeader.vue'
   import MyMain from '/src/components/MyMain.vue'
   import NavBar from './components/NavBar.vue'
+  import FooterMenu from './components/FooterMenu.vue'
 
 export default {
   name: 'App',
@@ -18,6 +20,8 @@ export default {
     MyHeader,
     MyMain,
     NavBar,
+    FooterMenu,
+    
   }
 }
 </script>
