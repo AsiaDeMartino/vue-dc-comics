@@ -2,19 +2,22 @@
   <div id="app">
    <MyHeader />
    <MyMain />
+   <NavBar />
     
   </div>
 </template>
 
 <script>
- import MyHeader from './components/MyHeader.vue'
-import MyMain from '/src/components/MyMain.vue'
+  import MyHeader from './components/MyHeader.vue'
+  import MyMain from '/src/components/MyMain.vue'
+  import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyMain,
+    NavBar,
   }
 }
 </script>
@@ -25,6 +28,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 
 #app {
   color: black;
