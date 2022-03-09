@@ -14,7 +14,7 @@ export default {
 <style scoped>
 .main{
     color: white;
-    background-color: black;
+    background-color: rgb(21,21,21);
     height: 100%;
     padding: 50px;
 }

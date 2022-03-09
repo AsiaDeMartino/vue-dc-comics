@@ -4,6 +4,7 @@
    <MyMain />
    <NavBar />
    <FooterMenu />
+   <MyFooter />
     
   </div>
 </template>
@@ -13,6 +14,7 @@
   import MyMain from '/src/components/MyMain.vue'
   import NavBar from './components/NavBar.vue'
   import FooterMenu from './components/FooterMenu.vue'
+  import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     MyMain,
     NavBar,
     FooterMenu,
+    MyFooter,
     
   }
 }
