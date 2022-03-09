@@ -17,27 +17,27 @@ export default {
       menu: [
         {
           href: "#",
-          src: "../assets/img/buy-comics-digital-comics.png",
+          src: require("../assets/img/buy-comics-digital-comics.png"),
           text: "digital comics"
         },
         {
           href: "#",
-          src: "../assets/img/buy-comics-merchandise.png",
+          src: require("../assets/img/buy-comics-merchandise.png"),
           text: "dc merchandise"
         },
         {
           href: "#",
-          src: "../assets/img/buy-comics-subscriptions.png",
+          src: require("../assets/img/buy-comics-subscriptions.png"),
           text: "subscription"
         },
         {
           href: "#",
-          src: "../assets/img/buy-comics-shop-locator.png",
+          src: require("../assets/img/buy-comics-shop-locator.png"),
           text: "comic shop locator"
         },
         {
           href: "#",
-          src: "../assets/img/buy-dc-power-visa.svg",
+          src: require("../assets/img/buy-dc-power-visa.svg"),
           text: "dc power visa"
         },
 
@@ -58,9 +58,9 @@ img{
     height: 150px;
     background-color: rgb(13,106,247);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding: 0 200px;
 }
 
 ul{

@@ -60,13 +60,14 @@ img {
 .footer-menu{
     height: 380px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
     background: url("../assets/img/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;    
     align-items: center; 
     overflow: hidden;
+    padding: 0 200px;
 }
 
 .menu{

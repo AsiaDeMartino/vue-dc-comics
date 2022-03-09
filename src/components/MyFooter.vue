@@ -38,7 +38,8 @@ export default {
     height: 110px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 200px;
     background-color: rgb(36,36,36);
 }
 

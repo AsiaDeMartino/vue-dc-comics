@@ -37,7 +37,4 @@ export default {
 }
 
 
-#app {
-  color: black;
-}
 </style>
