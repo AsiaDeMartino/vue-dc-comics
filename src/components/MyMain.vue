@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="card_wrapper">
-      <MyCard v-for="(card,i) in cards" :key="i" />
+      <MyCard v-for="(items,i) in cards" :key="i" :items="items"/>
     </div>
   </div>
 </template>
@@ -111,7 +111,6 @@ export default {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      column-count: 2;
       gap: 15px;
     }
 }
