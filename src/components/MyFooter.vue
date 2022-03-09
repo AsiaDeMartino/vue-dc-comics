@@ -55,6 +55,7 @@ export default {
     justify-content: space-between;
     padding: 0 200px;
     background-color: rgb(36,36,36);
+    flex-shrink: 0;
     
     .bottone{
     height: 50px;

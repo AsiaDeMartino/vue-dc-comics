@@ -86,6 +86,7 @@ img {
     align-items: center; 
     overflow: hidden;
     padding: 0 200px;
+    flex-shrink: 0;
 
     .menu{
     width: 400px;

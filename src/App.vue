@@ -24,7 +24,6 @@ export default {
     NavBar,
     FooterMenu,
     MyFooter,
-    
   }
 }
 </script>
@@ -36,6 +35,12 @@ export default {
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
+
+#app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap');
 

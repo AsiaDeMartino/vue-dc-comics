@@ -61,6 +61,7 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 0 200px;
+    flex-shrink: 0;
 }
 
 ul{

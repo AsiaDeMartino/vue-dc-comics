@@ -14,7 +14,7 @@ export default {
   name: 'MyHeader',
   data() {
     return {
-      elementoAttivo: 0,
+      elementoAttivo: 1,
       menu: [
         {
           text: "characters",
@@ -80,6 +80,7 @@ img{
   align-items: center;
   height: 100px;
   padding: 0 200px;
+  flex-shrink: 0;
 }
 
 ul{
