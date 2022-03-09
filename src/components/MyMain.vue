@@ -1,8 +1,11 @@
 <template>
   <div class="main">
+    <div class="banner"></div>
+    <button id="current">current series</button>
     <div class="card_wrapper">
       <MyCard v-for="(items,i) in cards" :key="i" :items="items"/>
     </div>
+    <button>load more</button>
   </div>
 </template>
 
@@ -104,6 +107,7 @@ export default {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: center;
 
     .card_wrapper{
       padding: 50px 200px;
@@ -112,6 +116,31 @@ export default {
       align-items: center;
       flex-wrap: wrap;
       gap: 15px;
+    }
+
+    button{
+      height: 40px;
+      width: 180px;
+      background-color: rgb(13,106,247);
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 40px;
+    }
+
+    .banner{
+      height: 400px;
+      width: 100%;
+      background: url("../assets/img/jumbotron.jpg");
+    }
+
+    #current{
+      height: 50px;
+      width: 250px;
+      font-size: 18px;
+      margin: 0;
+      transform: translate(-220%,-50%)
     }
 }
 </style>
