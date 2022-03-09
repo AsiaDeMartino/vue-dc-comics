@@ -1,41 +1,9 @@
 <template>
   <div class="footer-menu">
     <div class="menu">
-        <ul>
-            <h5>DC COMICS</h5>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Videos</li>
-            <li>News</li>
-        </ul>
-        <ul>
-            <h5>SHOP</h5>
-            <li>Shop DC</li>
-            <li>Shop DC Collectibles</li>
-        </ul>
-        <ul>
-            <h5>DC</h5>
-            <li>Terms Of Use</li>
-            <li>Privacy policy (New)</li>
-            <li>Ad Choices</li>
-            <li>Advertaising</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshops</li>
-            <li>CPSC Certificates</li>
-            <li>Rating</li>
-            <li>Shop Help</li>
-            <li>Contact Us</li>
-        </ul>
-        <ul>
-            <h5>SITES</h5>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
+        <ul v-for="(items, i) in menu" :key="i">
+            <h4>{{items.titolo}}</h4>
+            <li v-for="(element, j) in items.contenuto" :key="j">{{element}}</li>
         </ul>
     </div>
     <div class="logo">
@@ -47,11 +15,61 @@
 <script>
 export default {
   name: 'FooterMenu',
+  data(){
+      return {
+          menu: [
+              {
+                  titolo: "dc comics",
+                  contenuto: [
+                        "Characters",
+                        "Comics",
+                        "Movies",
+                        "TV",
+                        "Games",
+                        "Videos",
+                        "News"
+                  ],
+              },
+              {
+                  titolo: "shop",
+                  contenuto: [
+                        "Shop DC",
+                        "Shop DC Collectibles"
+                  ],
+              },
+              {
+                  titolo: "dc",
+                  contenuto: [
+                        "Terms Of Use",
+                        "Privacy policy(New)",
+                        "Ad Choices",
+                        "Advertising",
+                        "Subscriptions",
+                        "Talent Workshops",
+                        "CPSC Certificate",
+                        "Rating",
+                        "Shop Help",
+                        "Contact Us"
+                  ],
+              },
+              {
+                  titolo: "sites",
+                  contenuto: [
+                        "DC",
+                        "MAD Magazine",
+                        "DC Kids",
+                        "DC Universe",
+                        "DC Power Visa",
+                  ],
+              },
+          ]
+      }
+  }
 }
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
 img {
     width: 500px;
@@ -68,9 +86,8 @@ img {
     align-items: center; 
     overflow: hidden;
     padding: 0 200px;
-}
 
-.menu{
+    .menu{
     width: 400px;
     height: 100%;
     padding: 30px 0;
@@ -78,27 +95,29 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
+    }
 
-ul{
+    ul{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
     list-style: none;
-}
+    }
 
-h5{
-margin-bottom: 10px;
-margin-top: 20px;
-}
+    h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    }
 
-li{
+    li{
     font-size: 12px;
     color: rgb(186, 183, 183);
-}
 
-li:hover{
-    color: white;
+        &:hover{
+        color: white;
+        }
+    }   
 }
 
 </style>

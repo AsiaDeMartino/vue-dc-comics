@@ -76,7 +76,7 @@ li{
 
 span{
     color: white;
-    font-size: 13px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 </style>
