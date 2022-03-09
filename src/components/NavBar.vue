@@ -1,25 +1,9 @@
 <template>
   <div class="navbar">
      <ul>
-      <li><a href="#"></a>
-       <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-       <span>digital comics</span>
-      </li>
-      <li><a href="#"></a>
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <span>dc merchandise</span>
-      </li>
-      <li><a href="#"></a>
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-        <span>subscription</span>
-      </li>
-      <li><a href="#"></a>
-      <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-      <span>comic shop locator</span>
-      </li>
-      <li><a href="#"></a>
-      <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-      <span>dc power visa</span>
+      <li v-for="(items,i) in menu" :key="i"><a :href="items.href"></a>
+       <img :src="items.src">
+       <span>{{items.text}}</span>
       </li>
     </ul>
   </div>
@@ -28,6 +12,38 @@
 <script>
 export default {
   name: 'NavBar',
+  data() {
+    return {
+      menu: [
+        {
+          href: "#",
+          src: "../assets/img/buy-comics-digital-comics.png",
+          text: "digital comics"
+        },
+        {
+          href: "#",
+          src: "../assets/img/buy-comics-merchandise.png",
+          text: "dc merchandise"
+        },
+        {
+          href: "#",
+          src: "../assets/img/buy-comics-subscriptions.png",
+          text: "subscription"
+        },
+        {
+          href: "#",
+          src: "../assets/img/buy-comics-shop-locator.png",
+          text: "comic shop locator"
+        },
+        {
+          href: "#",
+          src: "../assets/img/buy-dc-power-visa.svg",
+          text: "dc power visa"
+        },
+
+      ],
+    }
+  }
 }
 </script>
 
